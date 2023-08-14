@@ -1,0 +1,14 @@
+FROM node:18-alpine
+
+WORKDIR /usr/src/app
+
+COPY package.json yarn.lock ./
+COPY tsconfig.json ./
+COPY jest.config.js ./
+COPY src ./src
+COPY test ./test
+
+RUN yarn && \
+    yarn cache clean
+
+CMD ["yarn", "test"]

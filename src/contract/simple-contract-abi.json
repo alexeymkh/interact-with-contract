@@ -1,0 +1,27 @@
+[{
+    "anonymous": false,
+    "inputs": [{
+        "indexed": false,
+        "internalType": "string",
+        "name": "message",
+        "type": "string"
+    }],
+    "name": "Greeting",
+    "type": "event"
+}, {
+    "inputs": [],
+    "name": "getString",
+    "outputs": [{
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+    }],
+    "stateMutability": "pure",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "sendEvent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+}]
